@@ -25,12 +25,8 @@ const checkValidId = (request, response, next) => {
 
 }
 
-// middlewares
 app.use(["/repositories/:id","/repositories/:id/like"], checkValidId)
 // app.use(/^\/repositories\/\:id(\/like)?/, checkValidId)
-
-
-
 
 
 app.get("/repositories", (request, response) => {
